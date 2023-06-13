@@ -1,6 +1,6 @@
 from app.auth.router import router as auth_router
 from app.config import client, env, fastapi_config
-from app.shanyrak.router import router as shanyrak_router
+from app.shanyraks.router import router as shanyraks_router
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
@@ -23,4 +23,4 @@ app.add_middleware(
 )
 
 app.include_router(auth_router, prefix="/auth", tags=["Auth"])
-app.include_router(shanyrak_router, prefix="/shanyrak", tags=["Shanyrak"])
+app.include_router(shanyraks_router, prefix="/shanyrak", tags=["Shanyrak"])
