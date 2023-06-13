@@ -3,7 +3,7 @@ services:
     name: fastapi
     runtime: docker
     plan: free
-    repo: mongodb+srv://madinaamankeldinova:<password>@madina.bwesxut.mongodb.net/?retryWrites=true&w=majority
+    repo: mongodb+srv://madinaamankeldinova:madina78010506@madina.bwesxut.mongodb.net/?retryWrites=true&w=majority
     region: frankfurt
     branch: main
     envVars:
