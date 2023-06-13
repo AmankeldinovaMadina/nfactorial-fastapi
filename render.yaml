@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fastapi
+    runtime: docker
+    plan: free
+    repo: hmongodb+srv://madinaamankeldinova:<password>@madina.bwesxut.mongodb.net/?retryWrites=true&w=majority
+    region: frankfurt
+    branch: main
+    envVars:
+      - key: MONGO_URL
+        sync: false
+    buildFilter:
+      paths:
+      - app/**
+  
